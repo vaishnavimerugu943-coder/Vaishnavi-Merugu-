@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merugu Vaishnavi — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small visual tweaks */
+    .accent { --tw-bg-opacity: 1; background-color: rgba(79, 70, 229, var(--tw-bg-opacity)); }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased leading-relaxed">
+  <header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-indigo-500 flex items-center justify-center text-xl font-bold">MV</div>
+      <div>
+        <h1 class="text-lg font-semibold">Merugu Vaishnavi</h1>
+        <p class="text-sm text-gray-400">B.Tech | Web Developer | Cybersecurity Enthusiast</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-4 text-sm text-gray-300">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+      <a href="#resume" class="px-3 py-1 border rounded border-gray-700">Resume</a>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">Hi, I'm <span class="text-indigo-400">Merugu</span> — a full-stack developer focused on secure web apps.</h2>
+        <p class="mt-4 text-gray-300">I build reliable, maintainable, and secure applications using Java, JSP, MySQL, and modern front-end tools. I enjoy turning ideas into production-ready solutions with clean code and thoughtful UX.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-5 py-2 rounded-md accent text-white font-medium">See my work</a>
+          <a href="mailto:your.email@example.com" class="px-5 py-2 rounded-md border border-gray-700 text-gray-300">Get in touch</a>
+        </div>
+        <div class="mt-6 text-sm text-gray-400">
+          <strong>Quick facts:</strong>
+          <ul class="list-disc ml-5 mt-2">
+            <li>Mini project: <em>Email Security and Authentication</em> (Java, JSP, MySQL, Tomcat)</li>
+            <li>Interested in cybersecurity, web apps, and automation</li>
+            <li>Open to internships & part-time roles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="glass p-6 rounded-2xl">
+        <img src="https://via.placeholder.com/600x400?text=Project+Screenshot" alt="screenshot" class="w-full rounded-lg shadow-lg" />
+        <div class="mt-4 flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Email Security & Authentication</h3>
+            <p class="text-sm text-gray-400">Java / JSP / MySQL / Tomcat — A small system implementing secure sending/receiving and read receipts.</p>
+          </div>
+          <div class="text-sm text-gray-300">2025</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-8">
+      <h3 class="text-2xl font-bold">About me</h3>
+      <p class="mt-3 text-gray-300">I'm a B.Tech student and developer who loves combining security practices with web development. I design server-side systems in Java and build interactive front-ends with HTML, CSS and JavaScript. My projects focus on real-world problems: authentication, secure messaging, and usable interfaces.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-8">
+      <h3 class="text-2xl font-bold">Selected Projects</h3>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <!-- Project Card -->
+        <article class="p-5 rounded-xl glass">
+          <h4 class="font-semibold">Email Security and Authentication</h4>
+          <p class="text-sm text-gray-300 mt-2">A complete mini project implementing secure mail sending/receiving, admin/user modules, and read-receipt acknowledgements. Tech: Java, JSP, JDBC, MySQL, Tomcat.</p>
+          <div class="mt-3 flex items-center gap-3 text-xs text-gray-400">
+            <span>Role: Full-stack dev</span>
+            <span>•</span>
+            <span>GitHub: <a href="#" class="text-indigo-300 hover:underline">repo-link</a></span>
+          </div>
+        </article>
+
+        <article class="p-5 rounded-xl glass">
+          <h4 class="font-semibold">Project Two — Web App</h4>
+          <p class="text-sm text-gray-300 mt-2">Short project description. Replace with your own project details, screenshots, and links to demos or repositories.</p>
+          <div class="mt-3 flex items-center gap-3 text-xs text-gray-400">
+            <span>Tech: HTML, CSS, JS</span>
+            <span>•</span>
+            <span>Live: <a href="#" class="text-indigo-300 hover:underline">demo-link</a></span>
+          </div>
+        </article>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-8">
+      <h3 class="text-2xl font-bold">Skills</h3>
+      <div class="mt-4 grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">Java</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">JSP / Servlets</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">MySQL / JDBC</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">HTML / CSS / JS</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">Git & GitHub</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">Web Security</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">Linux / Bash</span>
+        <span class="px-3 py-2 rounded bg-gray-800 text-sm">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- Experience / Education -->
+    <section class="py-8 grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">Experience</h3>
+        <div class="mt-4 text-gray-300">
+          <p><strong>Intern / Student Developer</strong> — University projects & freelance (2024–Present)</p>
+          <ul class="list-disc ml-5 mt-2 text-sm">
+            <li>Built and tested a secure mail system with authentication flows.</li>
+            <li>Performed unit/integration testing and wrote documentation for deployment on Tomcat.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Education</h3>
+        <div class="mt-4 text-gray-300">
+          <p><strong>B.Tech — (Your College)</strong> — Expected 2026</p>
+          <p class="text-sm mt-2">Relevant coursework: Web Technologies, Computer Networks, Cybersecurity, Databases.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-8">
+      <h3 class="text-2xl font-bold">Contact</h3>
+      <p class="mt-3 text-gray-300">Want to work together or have questions? Send me a message.</p>
+      <form class="mt-4 grid md:grid-cols-2 gap-4" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" class="p-3 rounded bg-gray-800 border border-gray-700" />
+        <input type="email" name="email" placeholder="Your email" class="p-3 rounded bg-gray-800 border border-gray-700" />
+        <textarea name="message" placeholder="Message" rows="5" class="p-3 rounded bg-gray-800 border border-gray-700 col-span-2"></textarea>
+        <div class="col-span-2 flex gap-3">
+          <button type="submit" class="px-4 py-2 rounded accent font-medium">Send</button>
+          <a href="#resume" class="px-4 py-2 rounded border border-gray-700">Download Resume</a>
+        </div>
+      </form>
+    </section>
+
+    <footer id="resume" class="mt-12 py-8 border-t border-gray-800 text-sm text-gray-500">
+      <p>Made with ♥ — Customize this template by replacing text, images, and links. Replace <code>your.email@example.com</code> with your real email.</p>
+      <div class="mt-4 flex gap-3 text-xs text-gray-400">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+  </main>
+</body>
+          </html>
+          
